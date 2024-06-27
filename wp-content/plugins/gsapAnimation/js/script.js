@@ -30,7 +30,7 @@ const boxes = gsap.utils.toArray(".box");
                     scrub: true,
                     end: "+=300"
                 },
-                x: 500,
+                x: 100,
                 duration: 5, // Duration of the animation
                 delay: i * 5 // Delay based on the index of the box
             });
