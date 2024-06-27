@@ -116,10 +116,10 @@ particlesJS("particles-js", {
   particlesJS("particles-js-orange", {
     "particles": {
       "number": {
-        "value": 120,
+        "value": 80,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {

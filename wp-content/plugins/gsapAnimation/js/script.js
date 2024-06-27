@@ -20,3 +20,18 @@ const showDemo = () => {
 };
 
 showDemo();
+
+const boxes = gsap.utils.toArray(".box");
+
+        boxes.forEach((box, i) => {
+            gsap.to(box, {
+                scrollTrigger: {
+                    trigger: box,
+                    scrub: true,
+                    end: "+=300"
+                },
+                x: 500,
+                duration: 5, // Duration of the animation
+                delay: i * 5 // Delay based on the index of the box
+            });
+        });
