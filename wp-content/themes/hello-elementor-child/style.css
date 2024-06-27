@@ -1,0 +1,175 @@
+/**
+ * Theme Name:     Hello Elementor Child
+ * Author:         Elementor Team
+ * Template:       hello-elementor
+ * Text Domain:	   hello-elementor-child
+ * Description:    Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
+ */
+.custom-footer-menu {
+  padding-left: 0;
+}
+
+.custom-footer-menu li {
+  list-style: none;
+  padding: 4px 0;
+}
+
+.custom-footer-menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.icon-with-text .elementor-icon-box-title {
+  margin-top: 0 !important;
+}
+
+.testimonial-slider h4 {
+  margin: 12px 0;
+  margin-bottom: 0;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 0px 12px 0px #00000049;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.testimonial-company {
+  color: #f55c00;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f55c00 !important;
+}
+
+.testimonials-client-img {
+  position: relative;
+  display: inline-block;
+}
+
+.testimonials-client-img:before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #f55c00;
+  background-image: url("/wp-content/uploads/2024/06/testimonial-one-quote-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: -18px;
+  transition: 500ms ease;
+}
+
+.custom-accordian-container h4,
+.custom-accordian-container .elementor-tab-content {
+  padding-left: 0 !important;
+}
+
+.custom-accordian-container .elementor-accordion-item {
+  border-bottom: solid 1px #00000034 !important;
+}
+
+.wpcf7-list-item {
+  margin-left: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.newsletter-email .wpcf7-form-control {
+  background: transparent;
+  padding: 12px 0;
+  border: none;
+  border-bottom: solid 1px #ffffff52;
+}
+
+.acceptterm .wpcf7-list-item-label {
+  font-size: 12px !important;
+}
+
+header {
+  position: sticky !important;
+  top: 0;
+  transition: 0.3s;
+}
+
+.input:focus-visible {
+  outline: none !important;
+}
+
+.without-margin-text p {
+  margin: 0 !important;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  transition: 0.3s;
+}
+
+.sticky-header::before {
+  top: 0;
+}
+
+.mix-item-menu button {
+  color: #000 !important;
+}
+
+.mix-item-menu button.active,
+.mix-item-menu button:hover {
+  background: #f55c00 !important;
+  color: #ffffff !important;
+}
+
+/* .custom-decorative-text-2 {
+	position: absolute;
+	transform: rotate(90deg) translateY(-50%);
+	top: 39%;
+	width: auto;
+} */
+
+/* .custom-decorative-text {
+    left: -10%;
+}
+
+.custom-decorative-text-2 {
+	right: -2%;
+} */
+
+.custom-overlay-update::before {
+  z-index: 2;
+}
+
+.custom-decorative-text h2, .custom-decorative-text-2 h2 {
+  font-size: clamp(8rem, 15vw, 16rem) !important;
+  line-height: 1;
+  font-weight: 900 !important;
+  display: flex;
+}
+
+.custom-decorative-text, .custom-decorative-text-2 {
+	position: absolute;
+}
+
+.custom-decorative-text {
+	top: 10%;
+}
+
+.custom-decorative-text-2 {
+	bottom: 10%;
+	z-index: 0;
+}
+
