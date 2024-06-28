@@ -114,7 +114,7 @@ header:before {
   content: "";
   position: absolute;
   top: -100%;
-  height: 100%;
+  height: 89%;
   width: 100%;
   background: #000;
   transition: 0.3s;
@@ -175,4 +175,23 @@ header:before {
 
 .elementor-editor-active canvas {
   display: none !important;
+}
+
+.mark {
+  color: #f55c00;
+}
+
+.reveal img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform-origin: left;
+}
+
+.reveal .elementor-widget-container {
+  visibility: hidden;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
 }
