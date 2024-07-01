@@ -134,21 +134,6 @@ header:before {
   color: #ffffff !important;
 }
 
-/* .custom-decorative-text-2 {
-	position: absolute;
-	transform: rotate(90deg) translateY(-50%);
-	top: 39%;
-	width: auto;
-} */
-
-/* .custom-decorative-text {
-    left: -10%;
-}
-
-.custom-decorative-text-2 {
-	right: -2%;
-} */
-
 .custom-overlay-update::before {
   z-index: 2;
 }
