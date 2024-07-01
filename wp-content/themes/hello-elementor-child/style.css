@@ -181,7 +181,7 @@ header:before {
   color: #f55c00;
 }
 
-.reveal img {
+.reveal .elementor-widget-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -191,7 +191,5 @@ header:before {
 .reveal .elementor-widget-container {
   visibility: hidden;
   position: relative;
-  width: 80%;
-  height: 80%;
   overflow: hidden;
 }
