@@ -164,6 +164,7 @@ header:before {
 
 .mark {
   color: #f55c00;
+  /* color: #ffffff; */
 }
 
 .reveal .elementor-widget-container img {
