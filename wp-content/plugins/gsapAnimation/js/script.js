@@ -1,33 +1,3 @@
-// Ensure GSAP and ScrollTrigger are registered
-gsap.registerPlugin(ScrollTrigger);
-
-const showDemo = () => {
-  document.scrollingElement.scrollTo(0, 0);
-  gsap.to(document.querySelector(".loader"), { autoAlpha: 0 });
-
-  gsap.utils.toArray(".section").forEach((section, index) => {
-    const w = section.querySelector("h2");
-    const [x, xEnd] =
-      index % 2
-        ? ["100%", (w.scrollWidth - section.offsetWidth) * -0.4]
-        : [w.scrollWidth * -0.4, 0];
-    gsap.fromTo(
-      w,
-      { x },
-      {
-        x: xEnd,
-        scrollTrigger: {
-          trigger: section,
-          start: "top center",
-          scrub: 2.5,
-          end: "+=300"
-        },
-      }
-    );
-  });
-};
-
-showDemo();
 
 const boxes = gsap.utils.toArray(".box");
 
@@ -58,34 +28,6 @@ boxes_up.forEach((box_up, i) => {
     y: -50,
     duration: 5, // Duration of the animation
     delay: i * 0.5, // Delay based on the index of the box
-  });
-});
-
-let revealContainers = document.querySelectorAll(
-  ".reveal .elementor-widget-container"
-);
-
-revealContainers.forEach((container) => {
-  let image = container.querySelector("img");
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
-      toggleActions: "restart none none reset",
-    },
-  });
-
-  tl.set(container, { autoAlpha: 1 });
-  tl.from(container, {
-    xPercent: -100,
-    duration: 1.5,
-    ease: "power2.out",
-  });
-  tl.from(image, {
-    xPercent: 100,
-    scale: 1.3,
-    duration: 1.5,
-    delay: -1.5,
-    ease: "power2.out",
   });
 });
 
@@ -191,20 +133,24 @@ gsap.utils
       trigger:  portfolioSection,
       start: "top center",
       scrub: 2.3, // Move slower
-      end: "+=300",
+      end: "+=1000",
     },
   });
 });
 
 // our process 
 let progressBar = document.querySelector('progress');
+let endNumber = '1000';
 
-console.log(progressBar)
+if(window.innerWidth < 1367){
+    endNumber = '600';
+    console.log(endNumber)
+}
 
   ScrollTrigger.create({
     start:  "top center",
     trigger: '.our-process-container',
-    end: "+=1000",
+    end: `+=${endNumber}`,
     scrub: 3.5,
     onUpdate: self => {
       progressBar.value = self.progress * 100;
