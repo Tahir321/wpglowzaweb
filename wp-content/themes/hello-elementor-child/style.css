@@ -295,7 +295,7 @@ header:before {
 }
 
 .hr-item-2 {
-  width: 460px !important;
+  width: 660px !important;
   border-left: solid 1px #ffffff40;
   border-right: solid 1px #ffffff40;
 }
@@ -383,7 +383,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background: #f55c00;
+  background: #f55e0059;
   background-attachment: fixed;
   border-radius: 12px;
 }

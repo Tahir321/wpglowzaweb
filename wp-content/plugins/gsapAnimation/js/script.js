@@ -143,7 +143,7 @@ let progressBar = document.querySelector('progress');
 let endNumber = '1000';
 
 if(window.innerWidth < 1367){
-    endNumber = '600';
+    endNumber = '800';
     console.log(endNumber)
 }
 
