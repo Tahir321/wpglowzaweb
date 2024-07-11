@@ -235,7 +235,7 @@ header:before {
 
 .mark {
   color: #f55c00;
-  /* color: #ffffff; */
+  font-weight: 600;
 }
 
 .hr-scroll .hr-scroll-container {
@@ -499,6 +499,12 @@ progress::-webkit-progress-value {
 /* .testimonial__item.active {
   border: 1px solid #f55c00;
 } */
+
+.gradient-color-title {
+  background: -webkit-linear-gradient(0deg, #f55c00, #ff8740);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 1367px) {
   .hr-item-2 {
